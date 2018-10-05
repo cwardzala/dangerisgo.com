@@ -1,0 +1,22 @@
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="author" content="{{ site.author }}">
+
+    {% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endif %}{% endcapture %}
+    <meta name="description" content="{{ description | strip_html | strip_newlines | condense_spaces }}">
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="fZAn5FuYClGP3nCXHmh52UT1M8vZwY-sKJrzbiMyOro" />
+
+    <script src="https://use.typekit.net/gtp2iqa.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!--[if lt IE 9]>
+      <script src="{{ root_url }}/js/html5shiv.js"></script>
+    <![endif]-->
+</head>

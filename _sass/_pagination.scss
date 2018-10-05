@@ -1,0 +1,25 @@
+.pager {
+    @include cf;
+    margin:1em 0;
+    padding:0;
+    list-style:none;
+
+    li {
+        margin:0;
+        padding:5px 10px;
+        background:$green;
+        color:$black;
+        border-radius: 5px;
+        display:inline-block;
+    }
+    a {
+        text-decoration:none;
+        color:$black;
+    }
+    .previous {
+        float:left;
+    }
+    .next {
+        float:right;
+    }
+}

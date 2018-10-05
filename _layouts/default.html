@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        <div id="main" class="container">
+            {% include header.html %}
+
+            {{ content }}
+
+            <footer class="page-footer" role="contentinfo">{% include footer.html %}</footer>
+        </div>
+        {% include after_footer.html %}
+    </body>
+</html>

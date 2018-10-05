@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .container {
+        width:auto;
+        padding: 0 10px;
+    }
+    h1.logo {
+        font-size:54px;
+        text-align:left;
+        float:left;
+    }
+
+    .pager li, .pager .next, .pager .previous {
+        float:none;
+        margin:1em 0;
+        display:block;
+    }
+}
+@media screen and (max-width: 320px) {
+    h1.logo {
+        font-size:37px;
+        text-align:left;
+        float:left;
+    }
+}
+@media screen and (max-width: 1024px) {
+  /* Add your styles for devices with a maximum width of 1024 */
+}
